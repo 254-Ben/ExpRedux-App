@@ -74,14 +74,14 @@ const decrementCount = ({ decrementBy = 1} = {}) => {
 // }
 
 // Destructuring setCount
-const setCount = ({ count}) => {
+const set = ({ count }) => {
     return {
         type: 'SET',
         count
     }
 }
 
-const resetCount = () => {
+const reset = () => {
     return {
         type: 'RESET'
     }
@@ -93,13 +93,13 @@ store.dispatch(incrementCount({ incrementBy: 5}));
 
 store.dispatch(incrementCount());
 
-store.dispatch(resetCount());
+store.dispatch(reset());
 
 store.dispatch(decrementCount());
 
 store.dispatch(decrementCount({ decrementBy: 10}));
 
-store.dispatch(setCount({ count: 150}));
+store.dispatch(set({ count: 150}));
 
 
 
