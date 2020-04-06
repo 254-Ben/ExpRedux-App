@@ -89,7 +89,7 @@ export default class ExpenseForm extends React.Component {
                         onChange={ (e) => this.setState({ note: e.target.value }) }
                     ></textarea>
                     <button>Add Expense</button>
-                    <button>Remove Expense</button>
+
                 </form>
             </div>
         )
